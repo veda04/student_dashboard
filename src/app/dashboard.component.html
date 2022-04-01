@@ -1,0 +1,105 @@
+<div class="container-fluid">
+ <h1>Hi {{currentUser.firstName +' '+ currentUser.lastName}}!</h1>
+<div class="row">
+    <div class="col-md-6">
+        <div class="card ht-50">
+       <h4><strong>Liquid guage graph</strong></h4>
+
+          <div class="ht-20">
+            <lib-ngx-liquid-gauge ></lib-ngx-liquid-gauge>
+          </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card">
+            <div id="chart">
+              <apx-chart
+                [series]="chartOptions.series"
+                [chart]="chartOptions.chart"
+                [xaxis]="chartOptions.xaxis"
+                [dataLabels]="chartOptions.dataLabels"
+                [grid]="chartOptions.grid"
+                [stroke]="chartOptions.stroke"
+                [title]="chartOptions.title"
+              ></apx-chart>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12">
+        <div class="card p-10 mt-2 mb-2">
+            <h4><strong>List of Clients</strong></h4>
+            <table datatable class="row-border hover">
+              <thead>
+                <tr>
+                  <th>ID</th>
+                  <th>First name</th>
+                  <th>Last name</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Foo</td>
+                  <td>Bar</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Someone</td>
+                  <td>Youknow</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Iamout</td>
+                  <td>Ofinspiration</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Yoda</td>
+                  <td>Skywalker</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Patrick</td>
+                  <td>Dupont</td>
+                </tr>
+                <tr>
+                  <td>6</td>
+                  <td>Barack</td>
+                  <td>Obama</td>
+                </tr>
+                <tr>
+                  <td>7</td>
+                  <td>François</td>
+                  <td>Holland</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>Michel</td>
+                  <td>Popo</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Chuck</td>
+                  <td>Norris</td>
+                </tr>
+                <tr>
+                  <td>10</td>
+                  <td>Simon</td>
+                  <td>Robin</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>Louis</td>
+                  <td>Lin</td>
+                </tr>
+                <tr>
+                  <td>12</td>
+                  <td>Zelda</td>
+                  <td>Link</td>
+                </tr>
+              </tbody>
+            </table>
+        </div>
+    </div>
+</div>  
+</div>

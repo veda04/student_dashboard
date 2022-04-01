@@ -1,0 +1,427 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body{
+	font-family: 'Kumbh Sans', sans-serif !important;
+}
+p{
+    font-size: 16px;
+}
+.page-section{
+	display: flex;
+}
+.text-center{
+    text-transform: capitalize;
+}
+
+.w-50{
+	width: 50%;
+	height: 100vh;
+}
+.w-20{
+    width: 20%;
+    height: 100vh;
+}
+.w-80{
+    width: 80%;
+    height: 100vh;
+}
+.mt-4{
+    margin-top: 36px;
+}
+.mb-2{
+    margin-bottom: 16px;
+}
+.mt-2{
+    margin-top: 26px;
+}
+.m-100{
+    margin: 100px 0;
+}
+.plr-50{
+ padding: 0 50px;
+}
+.ht-50{
+   height: 364px;
+padding: 1px 10px;
+}
+.ht-20{
+   height: 271px;
+}
+.card{
+    background: #c7edff;
+    /* padding: 10px; */
+    border-radius: 10px;
+}
+.p-10{
+padding: 1px 10px;
+
+}
+nav{
+        background: rgb(15,113,160);
+    background: linear-gradient(90deg, rgba(15,113,160,1) 40%, rgba(2,178,176,1) 100%) !important;
+    border-radius: 0 !important;
+}
+.navbar-nav{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    min-height: 50px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.navbar-nav a{
+    color: #fff !important;
+    cursor: pointer;
+}
+.admin-bg{
+	position: relative	;
+	background: url('assets/images/admin.jpg') no-repeat center;
+    background-size: cover;
+}
+.admin-bg:before{
+   background-color: rgba(0, 0, 0, 0.5);
+   background: linear-gradient(90deg, rgb(15 113 160 / 68%) 40%, rgb(2 178 176 / 70%) 100%);
+    bottom: 0;
+    content: "";
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+.edit-block{
+	display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px;
+}
+.input-cover{
+	width: 100%;
+}
+.listview.flush {
+    border-top: 0;
+    border-bottom: 0;
+}
+.listview li::marker{
+	color: #fff;
+}
+.listview {
+    display: block;
+    padding: 0;
+    margin: 0;
+    margin: 30px 0 0;
+    color: #141515;
+    background: #FFF;
+    border-top: 1px solid #E1E1E1;
+    border-bottom: 1px solid #E1E1E1;
+    line-height: 1.3em;
+}
+.form-group{
+	    position: relative;
+}
+.icon-box{
+	    position: absolute;
+    top: 32px;
+    z-index: 1;
+    left: 19px;
+}
+.icon-box i{
+	font-size: 22px;
+    color: #02b2b0;
+}
+.basic-form input[type="text"], .edit-address textarea {
+
+   font: 15px/24px 'Kumbh Sans', sans-serif !important;
+
+   color: #333;
+
+   width: 100%;
+
+   box-sizing: border-box;
+
+   letter-spacing: 0px;
+
+}
+
+.basic-form:::placeholder{
+
+  color: #b0b0b0 !important;
+
+  font-size: 12px !important;
+
+    line-height: 14px;
+
+
+
+}
+.basic-form .form-group input, .basic-form .form-group input:focus{
+  background: transparent !important;
+}
+
+.basic-form .form-group label{
+
+   color: #858585 !important;
+
+   font-size:17px !important;
+
+   font-weight: 500;
+       letter-spacing: 0.7px;
+
+}
+
+
+.basic-form .form-group.basic .form-control:focus,
+
+.basic-form .form-group.basic .custom-select:focus {
+
+   border-bottom-color: #edba5e;
+
+   box-shadow: inset 0 -1px 0 0 #edba5e;
+
+}
+
+.form-group .input-wrapper.active .label {
+
+   color: #58bdc2 !important;
+
+}
+
+
+
+.basic-form .form-group .clear-input {
+
+   display: flex;
+
+   align-items: center;
+
+   justify-content: center;
+
+   color: #4F5050;
+
+   height: 38px;
+
+   font-size: 22px;
+
+   position: absolute;
+
+   right: -6px;
+
+   bottom: 0;
+
+   width: 32px;
+
+   opacity: 0.5;
+
+   display: none;
+
+}
+
+
+
+.guest-detail{position: relative;}
+
+.float-label {
+
+   padding-top: 20px;
+
+   margin-top: 0px;
+
+}
+
+.floating-label{
+
+	position: absolute;
+	pointer-events: none;
+	left: 59px;
+	top: 35px;
+	transition: 0.2s ease all;
+	color: #808080;
+	letter-spacing: 0.3px;
+	font: 500 16px/20px 'Kumbh Sans', sans-serif !important;
+
+}
+.register .wide-block{
+    background: transparent;
+}
+ .edit-block h2{
+    font: 700 40px/20px 'Kumbh Sans', sans-serif !important;
+    margin: 0 0 20px;   
+}
+.register.basic-form .form-group label.eform-label{
+  color: #edba5e !important;
+
+  font: 500 12px/20px 'Kumbh Sans', sans-serif !important;
+
+  font-size: 12px !important;
+  margin: 0;
+}
+
+
+input:focus ~ .floating-label,
+
+input:not(:focus):valid ~ .floating-label{
+
+   top: 20px !important;
+
+   bottom: 0px;
+
+   left: 50px;
+
+   letter-spacing: 0.48px;
+
+   color: #02b2b0 !important;
+
+   font: 500 12px/20px 'Kumbh Sans', sans-serif !important;
+
+   font-size: 12px !important;
+
+}
+
+.field-icons{
+  color: #abd4dd;
+  font-size: 25px;
+}
+.invalid-feedback{
+	color: red;
+	    padding: 7px 0 0 17px;
+}
+.sep-border {
+  border-top: 1px solid #cecece;
+      width: 100%;
+      margin: 0 auto;
+      position: relative;
+      bottom: -25px;
+}
+.sep-p{
+      background: #fff !important;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+.outer-circle {
+    padding: 10px;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.outer-circle i {
+    font-size: 22px;
+    color: #fff;
+}
+.form-links.links-inline {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.divide-50l {
+    width: 45%;
+    float: left;
+}
+.divide-50r {
+    width: 45%;
+    float: right;
+}
+.login-form .wide-block{
+    background: transparent;
+}
+ .form-control {
+	display: block !important;
+	width: 100% !important;
+	height: 50px !important;
+	padding: 6px 12px 6px 50px !important;
+	font-size: 14px !important;
+	line-height: 1.42857143 !important;
+	color: #555 !important;
+	background-color: #fff;
+	border: 1px solid #ccc;
+	border-radius: 27px !important;
+	box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.forgot-password{
+    text-decoration: underline !important;
+}
+.btn-submit{
+	background: rgb(15,113,160);
+    background: linear-gradient(90deg, rgba(15,113,160,1) 40%, rgba(2,178,176,1) 100%) !important;
+    color: #fff;    
+    border: none !important;
+    outline: none !important;
+    padding: 11px 16px !important;
+    font-size: 16px !important;
+    line-height: 1.3333333;
+    border-radius: 27px !important;
+    text-transform: uppercase;
+    color: #fff !important;
+    width: 50% !important;
+    margin: 0 auto !important;
+}
+
+/*PROFILE*/
+.profile-image{
+        border-radius: 100%;
+    overflow: hidden;
+    width: 200px;
+    background: #cacaca;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto 30px;
+    justify-content: center;
+}
+.btn-submit.btn-submit2{
+    width: 100% !important;
+    margin-top: 19px !important;
+    padding: 0;
+    height: 50px;
+}
+
+ .edit-profile .form-control{
+    display: block !important;
+    width: 100% !important;
+    height: 50px !important;
+    padding: 6px 12px 6px 1px !important;
+    font-size: 14px !important;
+    line-height: 1.42857143 !important;
+    color: #555 !important;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0px !important;
+    box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+    border-bottom: 1px solid #c2c2c2 !important;
+    outline: none;
+    border-right: 0px solid !important;
+    box-shadow: none !important;
+    border-top: none !important;
+    border-left: none !important;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+ .edit-profile input:focus ~ .floating-label, 
+ .edit-profile input:not(:focus):valid ~ .floating-label {
+    top: 20px !important;
+    bottom: 0px;
+    left: 0px;
+    letter-spacing: 0.48px;
+    color: #02b2b0 !important;
+    font: 500 12px/20px 'Kumbh Sans', sans-serif !important;
+    font-size: 12px !important;
+}
+
+table{
+    width: 100%;
+    border: 1px solid #cacaca;
+}
+table tr th{
+    padding: 10px;
+    border-bottom: 1px solid #cacaca;
+}
+table tr td{
+    padding: 10px;
+    border-bottom: 1px solid #cacaca;
+}
